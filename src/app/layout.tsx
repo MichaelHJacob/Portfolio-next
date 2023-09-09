@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Barlow } from 'next/font/google'
 import Fundo from './components/Fundo'
+import { Analytics } from '@vercel/analytics/react';
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
        <body className={`${ barlow.className} bg-[#BEC4C1] dark:bg-[#0B2527] scrollWindow  scroll-smooth`}>
         <Fundo/>
        {children}
+       <Analytics/>
       </body>
     </html>
   )
