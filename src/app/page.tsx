@@ -4,6 +4,7 @@ import foto from "../../public/foto.jpeg";
 
 import Footer from "./components/Footer";
 import Main from "./components/Main";
+import Fundo from './components/Fundo'
 
 import { Button, ButtonMail } from "./components/BtnSocial";
 import { FiGithub } from "react-icons/fi"
@@ -63,7 +64,7 @@ function Home() {
             <Image
               src={foto}
               alt="foto"
-              className=" opacity-50 grayscale-[70%] object-cover  mask "
+              className="object-cover"
             />
           </div>
         </div>
@@ -78,6 +79,7 @@ export default function Portfolio() {
       <Home />
       <Main />
       <Footer />
+      <Fundo />
     </>
   );
 }
