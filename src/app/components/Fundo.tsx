@@ -8,7 +8,7 @@ export default function Fundo() {
       <span className="skew-x-12 h-screen w-[35%] bg-black/5  absolute left-[-10vw]   "></span>
       <span className="skew-x-12 h-screen w-1/4 bg-black/5  absolute left-[-10vw] "></span>
       <span className="skew-x-12 h-screen w-[50%] bg-black/5  absolute left-[-10vw]  "></span>
-      <div id="backAnim" className=" absolute h-full w-full z-10"></div>
+      <div id="backAnim" className=" absolute h-full w-full z-10 bg-black/0 backdrop-blur-[0px] transform-gpu transition-all duration-1000 "></div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import "./globals.css";
 import Image from "next/image";
-import foto from "../../public/foto.jpeg";
+import foto from "../../public/foto.png";
 
 import Footer from "./components/Footer";
 import Main from "./components/Main";
