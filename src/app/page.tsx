@@ -64,7 +64,7 @@ function Home() {
             <Image
               src={foto}
               alt="foto"
-              className="object-cover"
+              className="object-cover foto"
             />
           </div>
         </div>

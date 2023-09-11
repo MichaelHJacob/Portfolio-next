@@ -21,6 +21,23 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-barlow)']
+      },
+      keyframes: {
+        size : {
+          '0%': { transform: 'skewX(11deg) scaleX(1)'},
+          '100%': { transform: 'skewX(12deg) scaleX(3)'},   
+        },
+        opacity : {
+          '0%': { opacity : '0', transform: 'translateX(-10px)'},
+          '5%': { opacity : '0.01', transform: 'translateX(-10px)'},
+          '100%': { opacity : '1',  transform: 'translateX(0px)'},
+        }
+      },
+      animation: {
+        size1: 'size  10s ease-in-out infinite alternate',
+        size2: 'size  20s ease-in-out infinite alternate-reverse',
+        size3: 'size  30s ease-in-out infinite alternate',
+        opacity: 'opacity  2s ease-in-out',
       }
     },
   },
