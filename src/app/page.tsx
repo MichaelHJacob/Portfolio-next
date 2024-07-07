@@ -2,11 +2,11 @@ import "./globals.css";
 import Image from "next/image";
 import foto from "../../public/foto.png";
 
-import Footer from "./components/Footer";
-import Main from "./components/Main";
-import Fundo from './components/Fundo'
+import Footer from "../components/Footer";
+import Main from "../components/Main";
+import Fundo from '../components/Fundo'
 
-import { Button, ButtonMail } from "./components/BtnSocial";
+import { Button, ButtonMail } from "../components/BtnSocial";
 import { FiGithub } from "react-icons/fi"
 import { PiLinkedinLogo }  from "react-icons/pi"
 import { HiOutlineMail }  from "react-icons/hi";
@@ -56,15 +56,16 @@ function Home() {
       </div>
       <Sobre />
       <div className=" max-md:w-[10vw] w-[20vw] h-screen row-span-2 relative  z-30  bg-gradient-to-b from-gray-700/95 via-gray-700/50 to-transparent sm:bg-none">
-        <div className=" skew-x-12 h-full  portrait:w-[50vw] w-[30vw] min-w-[40vh] bg-yellow-400/0 absolute right-0 overflow-clip  ">
+        <div className=" skew-x-12 h-full  portrait:w-[50vw] w-[30vw] min-w-[40vh] bg-yellow-400/0 absolute right-0 overflow-clip ">
           <div
-            className="absolute   bg-green-400/0 w-[calc(100%_+_20vh)]    min-w-[100vh]   skew-x-[-12deg]  top-[50%] translate-y-[-50%]  
-        right-[-10vh] square:bg-red-700/0 square:right-[calc(-40vh_+_18vw)] portrait:right-[calc(-40vh_+_28vw)]  "
+            className="absolute   bg-green-400/0 w-[calc(100%_+_20vh)]    min-w-[100vh]   skew-x-[-12deg]  top-1/2 translate-y-[-50%]  
+        right-[-10vh] square:bg-red-700/0 square:right-[calc(-40vh_+_18vw)] portrait:right-[calc(-40vh_+_28vw)] h-screen "
           >
             <Image
               src={foto}
               alt="foto"
               className="object-cover foto"
+              fill={true}
             />
           </div>
         </div>

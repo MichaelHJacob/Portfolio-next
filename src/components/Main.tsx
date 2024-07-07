@@ -1,4 +1,3 @@
-import "../globals.css";
 import cards from "./CardPortfolio";
 import { IoIosLink } from "react-icons/io";
 import dynamic from "next/dynamic";
@@ -18,13 +17,13 @@ export default function Main() {
         <>
           <div
             key={index}
-            className=" bg-white/60 dark:bg-zinc-100/80 px-2 h-full sm:min-h-[320px] landscape:lg:h-5/6 min-w-[180px] portrait:max-sm:w-[75vw]     w-[40svh]  max-w-sm 2xl:max-w-md   inline-block align-middle scroll-ml-[8vw] snap-start snap-always mr-0 rounded-l-md shadow-2xl "
+            className=" bg-white/60 dark:bg-zinc-100/80 px-2 h-full sm:min-h-[320px] landscape:lg:h-5/6 min-w-[180px] portrait:max-sm:w-[75vw]     w-[40svh]  max-w-sm 2xl:max-w-md   inline-block align-middle scroll-ml-[8vw] snap-start snap-always mr-0 rounded-l-md shadow-2xl relative"
           >
             <ul className="overflow-y-scroll  overflow-x-hidden w-full h-full  snap-y snap-mandatory py-[17%]   sm:py-[5vh] 2xl:py-3 ">
               {card.conteúdo.map((img, index) => (
                 <li
                   key={index}
-                  className=" w-[80%] max-w-[280px] landscape:max-w-[70%] landscape:lg:max-w-[60%]  h-auto     m-auto  shadow-2xl shadow-black/70  rounded-2xl snap-center snap-always portrait:max-sm:mb-[5svh]  mb-[15%] 2xl:my-10 overflow-hidden  "
+                  className="w-[80%] max-w-[280px] landscape:max-w-[70%] landscape:lg:max-w-[60%]  h-auto     m-auto  shadow-2xl shadow-black/70  rounded-2xl snap-center snap-always portrait:max-sm:mb-[5svh]  mb-[15%] 2xl:my-10 overflow-hidden "
                 >
                   {img}
                 </li>
