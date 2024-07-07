@@ -85,13 +85,6 @@ const cards = [
         <p className="py-1">
         A Plataforma web que atua como um catálogo de filmes está sendo desenvolvida utilizando Next.js, TypeScript e Tailwind Css, e utiliza API TMDB.
         </p>
-        {/* <p className="py-1">
-        O site apresenta um design minimalista e limpo, juntamente com excelente otimização para dispositivos móveis, oferecendo uma experiência de navegação suave e intuitiva. A plataforma inclui funcionalidades como campo de pesquisa, página de filtro, entre outras.
-        </p> */}
-        {/* <span className="text-xs font-light py-1">
-          Participaram do projeto:
-          <br />
-        </span>{" "} */}
         <p className="text-sm py-1">
         Fui responsável por todas as etapas do projeto, desde a concepção da ideia até o layout do design. Com um foco profissional, o desenvolvimento teve como objetivo expandir e mostrar minhas habilidades com Next.js e React.
         </p>
