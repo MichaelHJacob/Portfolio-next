@@ -9,14 +9,15 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: 'Michael | Dev. FrontEnd',
-  description: 'Portfolio',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1.0,
-    viewportFit: 'cover',
-  },
+  title: 'Michael Henrique Jacob',
+  description: 'portfólio'
 }
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+  viewportFit: 'cover'
+};
 
 export default function RootLayout({
   children,
@@ -32,3 +33,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+
