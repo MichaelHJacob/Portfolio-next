@@ -1,10 +1,10 @@
 "use client";
-import { useEffect, useRef } from "react";
-import React from "react";
+
+import React, { useEffect, useRef } from "react";
 
 export default function Dinamico() {
-  let refMain = useRef<HTMLDivElement | null>(null);
-  var elemento = document.getElementById("backAnim");
+  const refMain = useRef<HTMLDivElement | null>(null);
+  const elemento = document.getElementById("backAnim");
   let opaco = false;
 
   function scroll() {
@@ -29,6 +29,6 @@ export default function Dinamico() {
   });
 
   return (
-    <div ref={refMain} className="absolute z-[-1] top-0 left-0 h-0 w-0 "></div>
+    <div ref={refMain} className="absolute left-0 top-0 z-[-1] h-0 w-0"></div>
   );
 }
