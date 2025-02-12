@@ -125,17 +125,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-.DS_Store
-src/.DS_Store
-src/app/.DS_Store
-public/.DS_Store
-public/.DS_Store
-src/app/.DS_Store
-src/app/.DS_Store
-src/app/.DS_Store
-src/app/.DS_Store
-src/app/.DS_Store
-src/app/.DS_Store
-public/.DS_Store
-public/albums/.DS_Store
-public/.DS_Store
+
+# misc
+**/.DS_Store

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer utilities {
-  .foto{
-    @apply animate-opacity
+  .foto {
+    @apply animate-opacity;
   }
   .p-safe-x {
     padding-left: env(safe-area-inset-left);
