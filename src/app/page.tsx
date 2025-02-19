@@ -15,7 +15,7 @@ function Sobre() {
       <div className="relative z-50 flex h-auto w-full flex-wrap justify-start lg:justify-end">
         <Button
           text="LinkedIn"
-          linkPage="https://www.linkedin.com/in/michael-henrique-jacob-93703421a/"
+          linkPage="https://www.linkedin.com/in/michaelhjacob/"
         >
           <PiLinkedinLogo
             size={25}

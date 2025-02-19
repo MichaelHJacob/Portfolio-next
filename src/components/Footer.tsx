@@ -34,43 +34,47 @@ export default function Footer() {
       id="idFooter"
     >
       <div className="flex w-full max-w-7xl flex-row flex-wrap items-start justify-start sm:justify-between sm:p-8 sm:pt-8">
-        {/* <CardInfo
-          title="Outros"
+        <CardInfo
+          title="Currículo"
           info={[
-            <a href="/Curriculum.pdf" download>
-              <span className=" rounded-md p-2 m-[-0.5rem] hover:bg-gray-100 transition-colors duration-1000">
-                Pdf - Currículo
+            <a href="/CV_Michael_Henrique_Jacob.pdf" download key="cv">
+              <span className="m-[-0.5rem] rounded-md p-2 transition-colors duration-1000 hover:bg-gray-100">
+                Download
               </span>
             </a>,
           ]}
-        /> */}
+        />
         <CardInfo
-          title="Formação e mais"
+          title="Formação"
           info={[
-            "Senac - Graduação em Análise e Desenvolvimento de Sistemas",
-            "Inglês básico",
+            "Análise e Desenvolvimento de Sistemas - Centro Universitário Senac",
+            "Curso Técnico de Hardware, Redes e Notebooks - Microlins",
+            "Curso 1Z0-071 / Oracle Database SQL - Udemy",
           ]}
         />
         <CardInfo
-          title="Habilidades"
+          title="Skills"
           info={[
             "React",
-            "JavaScript",
+            "Next.js",
             "TypeScript",
-            "HTML",
-            "Css",
-            "Tailwind",
-            "Figma",
-            "Pixel Perfect",
+            "JavaScript",
+            "TailwindCSS",
+            "HTML5",
+            "CSS3",
+            "SQL (Oracle SQL e MySQL)",
+            "Git e Github",
+            "Figma (prototipação básica)",
+            "Design responsivo",
             "Metodologia ágeis",
           ]}
         />
         <CardInfo
-          title="Entre em contato"
+          title="Contato"
           info={[
-            "michael_h.jacob@hotmail.com",
+            "michael_h.jacob@outlook.com",
             <a
-              href="https://www.linkedin.com/in/michael-henrique-jacob-93703421a/"
+              href="https://www.linkedin.com/in/michaelhjacob/"
               target="_blank"
               key="www.linkedin.com/in/michaelhjacob"
             >

@@ -32,17 +32,17 @@ export function ButtonMail({
   children,
   ...props
 }: ButtonMailProps & { text: string }) {
-  const emailRef = useRef<HTMLSpanElement>(null);
+  const emailRef = useRef<string>("michael_h.jacob@outlook.com");
   function copy() {
     if (!emailRef.current) return;
-    navigator.clipboard.writeText(`${emailRef.current.innerText}`);
+    navigator.clipboard.writeText(`${emailRef.current}`);
   }
 
   return (
     <div className="group/item my-2 inline-flex items-center overflow-hidden rounded-2xl border-gray-300/80 bg-zinc-200/30 backdrop-blur-xl transition-all duration-1000 ease-in-out hover:bg-white/50 sm:my-0 sm:rounded-xl dark:border-2 dark:border-solid dark:border-white/10 dark:bg-gray-900/10 dark:hover:bg-white/10">
       <a
         className="inline-flex p-4 transition-all duration-1000 ease-in-out sm:p-2 md:hover:bg-white/50 md:dark:hover:bg-white/10"
-        href="mailto:michael_h.jacob@hotmail.com?subject=Vim pelo seu portfólio"
+        href={`mailto:${emailRef.current}?subject=Vim pelo seu portfólio`}
       >
         {children}
         <span className="pl-1.5 font-medium text-gray-900/60 dark:text-gray-100">
@@ -50,11 +50,8 @@ export function ButtonMail({
         </span>
       </a>
       <div className="group/edit inline-flex w-0 overflow-hidden overscroll-none opacity-0 transition-all duration-1000 ease-in-out md:group-hover/item:w-[275px] md:group-hover/item:opacity-100">
-        <span
-          className="h-full w-[300px] rounded-sm bg-zinc-200/30 p-4 text-center font-medium text-gray-900/60 backdrop-blur-3xl sm:p-2 dark:bg-zinc-800/20 dark:text-gray-100"
-          ref={emailRef}
-        >
-          michael_h.jacob@hotmail.com
+        <span className="h-full w-[300px] rounded-sm bg-zinc-200/30 p-4 text-center font-medium text-gray-900/60 backdrop-blur-3xl sm:p-2 dark:bg-zinc-800/20 dark:text-gray-100">
+          {emailRef.current}
         </span>
         <button
           className="p-4 transition-all duration-1000 ease-in-out hover:bg-white/50 sm:p-2 dark:hover:bg-white/10"
