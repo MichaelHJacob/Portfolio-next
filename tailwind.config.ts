@@ -21,24 +21,35 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-barlow)"],
+        sans: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
-        size: {
-          "0%": { transform: "skewX(11deg) scaleX(1)" },
-          "100%": { transform: "skewX(12deg) scaleX(3)" },
-        },
-        opacity: {
-          "0%": { opacity: "0", transform: "translateX(-10px)" },
-          "5%": { opacity: "0.01", transform: "translateX(-10px)" },
-          "100%": { opacity: "1", transform: "translateX(0px)" },
+        opacityBlur: {
+          "0%": {
+            opacity: "0",
+            filter: "blur(0px)",
+          },
+          "50%": {
+            opacity: "0.3",
+            filter: "blur(0px)",
+          },
+          "100%": {
+            opacity: "0.3",
+            filter: "blur(5px)",
+          },
         },
       },
       animation: {
-        size1: "size  10s ease-in-out infinite alternate",
-        size2: "size  20s ease-in-out infinite alternate-reverse",
-        size3: "size  30s ease-in-out infinite alternate",
-        opacity: "opacity  2s ease-in-out",
+        opacityBlur: "opacityBlur  3s ease-in-out",
+      },
+      colors: {
+        backgroundPrimary: "#1C1C1C", // Background principal
+        backgroundSecondary: "#323233", // Background secundário e fundo de li estilizados dentro dos cards
+        backgroundCard: "#232323", // Background de cards sobre o background secundário
+        textPrimary: "#A3E635", // Texto do h1 e underline de links
+        textSecondary: "rgba(251, 252, 253, 0.05)", // Texto do h2 com opacity de 5%
+        textTertiary: "#FBFCFD", // Texto da maioria dos h3, p
+        textSubTitle: "#909091", // Subtítulo do h3
       },
     },
   },

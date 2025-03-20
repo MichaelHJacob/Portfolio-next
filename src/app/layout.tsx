@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 
 import { Analytics } from "@vercel/analytics/react";
-import { Barlow } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import "./globals.css";
 
-const barlow = Barlow({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
   title: "Michael Henrique Jacob",
-  description: "portfólio",
+  description: "Portfólio de Michael Henrique Jacob",
 };
 
 export const viewport = {
@@ -27,13 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="pt-br"
-      className="scrollWindow h-full w-full snap-y snap-mandatory scroll-smooth"
-    >
-      <body
-        className={`${barlow.className} scrollWindow scroll-smooth bg-[#BEC4C1] dark:bg-[#0B2527]`}
-      >
+    <html lang="pt-BR" className={`${montserrat.variable} h-full w-full`}>
+      <body className={`bg-backgroundPrimary`}>
         {children}
         <Analytics />
       </body>
