@@ -35,6 +35,21 @@
     @apply flex h-auto w-full flex-col items-center justify-start gap-8 overflow-x-hidden bg-backgroundPrimary py-24;
   }
 
+  .fade {
+    @apply animate-fade animate-duration-[1500ms] animate-fill-backwards animate-ease-in-out;
+  }
+
+  .fade-up {
+    @apply animate-fade-up animate-duration-1000 animate-fill-both animate-ease-in-out;
+  }
+
+  .fade-left {
+    @apply animate-fade-left animate-duration-1000 animate-fill-backwards animate-ease-in-out;
+  }
+  .fade-right {
+    @apply animate-fade-right animate-duration-1000 animate-fill-backwards animate-ease-in-out;
+  }
+
   .content {
     @apply container px-5 sm:px-12 md:px-8 xl:px-12;
   }

@@ -17,13 +17,14 @@ export default function CardArticle({ size, children, order }: ArticleType) {
   let space = " lg:grid-cols-[20rem_auto] xl:grid-cols-[24rem_auto] ";
   switch (size) {
     case "small":
-      space = "";
+      space = "md:intersect:animate-delay-500";
       break;
     case "middle":
-      space += " md:col-span-2";
+      space += " md:col-span-2 md:intersect:animate-delay-[800ms] ";
       break;
     case "large":
-      space += " md:grid-cols-[18rem_auto]  md:col-span-3 ";
+      space +=
+        " md:grid-cols-[18rem_auto] md:col-span-3 md:intersect:animate-delay-300 ";
       break;
   }
   if (order) {
@@ -32,7 +33,7 @@ export default function CardArticle({ size, children, order }: ArticleType) {
 
   return (
     <article
-      className={`${space} col-span-1 row-span-1 grid auto-rows-auto grid-cols-1 content-between overflow-clip rounded-2xl bg-backgroundCard xl:min-h-[33rem]`}
+      className={`${space} intersect:fade-up intersect-once col-span-1 row-span-1 grid auto-rows-auto grid-cols-1 content-between overflow-clip rounded-2xl bg-backgroundCard shadow-2xl shadow-black/80 xl:min-h-[33rem]`}
     >
       {children}
     </article>

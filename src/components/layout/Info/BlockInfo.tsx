@@ -8,7 +8,10 @@ export default function BlockInfo({
   cardStyle?: boolean;
 }) {
   return (
-    <li itemScope className={`h-auto py-4`}>
+    <li
+      itemScope
+      className="intersect:fade-up intersect-once h-auto py-4 intersect:animate-delay-100 md:[&:nth-child(1)]:intersect:animate-delay-100 md:[&:nth-child(2)]:intersect:animate-delay-300 md:[&:nth-child(3)]:intersect:animate-delay-500 md:[&:nth-child(4)]:intersect:animate-delay-700"
+    >
       <h3 className="mb-4 py-2 text-lg font-bold leading-7 text-textTertiary">
         {title}
       </h3>

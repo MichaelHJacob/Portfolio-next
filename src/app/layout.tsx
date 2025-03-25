@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { Analytics } from "@vercel/analytics/react";
 import { Montserrat } from "next/font/google";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -32,6 +33,10 @@ export default function RootLayout({
       <body className={`bg-backgroundPrimary`}>
         {children}
         <Analytics />
+        <Script
+          defer
+          src="https://unpkg.com/tailwindcss-intersect@2.x.x/dist/observer.min.js"
+        />
       </body>
     </html>
   );

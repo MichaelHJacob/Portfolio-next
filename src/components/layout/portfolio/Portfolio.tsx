@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <section id="projects">
       <h2 className="subtitle">Projetos</h2>
-      <div className="content grid w-full auto-rows-auto grid-cols-1 gap-8 sm:gap-12 md:grid-cols-[18rem_auto_auto] md:gap-8 lg:grid-cols-[20rem_auto_auto] lg:gap-12 xl:grid-cols-[24rem_auto_auto]">
+      <div className="content grid w-full auto-rows-auto grid-cols-1 gap-8 *:opacity-0 sm:gap-12 md:grid-cols-[18rem_auto_auto] md:gap-8 lg:grid-cols-[20rem_auto_auto] lg:gap-12 xl:grid-cols-[24rem_auto_auto]">
         {data.map((article, index) => (
           <CardArticle key={index} size={article.size} order={article.order}>
             <CardHeader title={article.title} subtitle={article.subtitle} />

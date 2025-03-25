@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimated from "tailwindcss-animated";
+import tailwindcssIntersect from "tailwindcss-intersect";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
@@ -53,6 +55,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindcssAnimated, tailwindcssIntersect],
 };
 export default config;

@@ -35,7 +35,7 @@ const data: DataPortfolioType[] = [
         <Image
           src={wm}
           alt="Captura de tela na página de filtro do site whatmovie.com.br"
-          className="sm:img-crisp-edges object-cover object-top md:min-h-[120%] md:object-left-top"
+          className="sm:img-crisp-edges intersect:fade-up intersect-once object-cover object-top intersect:animate-delay-200 md:min-h-[120%] md:object-left-top md:intersect:animate-delay-500"
           sizes="(max-width: 640px) 95vw, (max-width: 768px) 544px, (max-width: 1280px) 916px, (max-width: 1536px) 966px, 1056px"
           fill
           quality={100}
@@ -63,7 +63,7 @@ const data: DataPortfolioType[] = [
         <Image
           src={churras}
           alt="Captura de tela do Churrascômetro"
-          className="sm:img-crisp-edges mx-auto mt-5 max-w-[min(90%,288px)] object-cover object-top drop-shadow-[0_14px_30px_rgba(0,0,0,0.70)] sm:max-w-none sm:object-none lg:my-auto lg:ml-[30%] lg:object-left xl:ml-0 xl:object-center"
+          className="sm:img-crisp-edges intersect:fade-up lg:intersect:fade-left intersect-once mx-auto mt-5 max-w-[min(90%,288px)] object-cover object-top drop-shadow-[0_14px_30px_rgba(0,0,0,0.70)] intersect:animate-delay-200 md:intersect:animate-delay-1000 lg:my-auto lg:ml-[30%] lg:max-w-[270px] lg:object-scale-down lg:object-left xl:mx-auto xl:object-center"
           fill
           sizes="(max-width: 640px) 90vw, 270px"
           quality={100}
@@ -92,7 +92,7 @@ const data: DataPortfolioType[] = [
       </p>
     ),
     picture: (
-      <div className="h-full w-full bg-[#F7F6F6]">
+      <div className="intersect:fade-up lg:intersect:fade-right intersect-once h-full w-full bg-[#F7F6F6] intersect:animate-delay-200 md:intersect:animate-delay-700">
         <iframe
           src="https://michaelhjacob.github.io/relogio-analogico/"
           title="Relógio Analógico"
