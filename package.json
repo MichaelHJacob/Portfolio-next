@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.2",
@@ -16,6 +16,7 @@
     "react-icons": "^4.11.0",
     "schema-dts": "^1.1.5",
     "sharp": "^0.33.5",
+    "sst": "4.17.0",
     "tailwindcss-animated": "^2.0.0",
     "tailwindcss-intersect": "^2.2.0"
   },

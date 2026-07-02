@@ -128,3 +128,10 @@ dist
 
 # misc
 **/.DS_Store
+
+# sst
+.sst
+
+
+# open-next
+.open-next
