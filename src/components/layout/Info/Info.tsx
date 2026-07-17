@@ -101,9 +101,9 @@ export default function Info() {
           info={[
             <Link
               key="cv"
-              url="/CV_Michael_Henrique_Jacob.pdf"
+              url="/CV_MichaelHJacob.pdf"
               download
-              label="CV_Michael_Henrique_Jacob.pdf"
+              label="CV_MichaelHJacob.pdf"
             />,
           ]}
         />
