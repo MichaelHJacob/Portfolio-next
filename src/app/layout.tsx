@@ -36,7 +36,7 @@ const jsonLd: WithContext<WebSite> = {
   "@type": "WebSite",
   name: "Michael H. Jacob",
   alternateName: ["Michael Henrique Jacob", "MichaelHJacob"],
-  url: "https://michaelhjacob.vercel.app",
+  url: "https://mjacob.dev",
 };
 
 export const viewport = {
